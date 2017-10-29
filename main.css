@@ -1,3 +1,16 @@
+html{
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a0/Environments-21-cave.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.allCon{
+	position: relative;
+	background: #5C97FF;
+	overflow: hidden;
+}
+
 .header {
 	text-align: center;
 	font-size: 40px;
