@@ -6,16 +6,182 @@
 	<body>
 		<form action="/create-new-char" method="post">
 			<div>
+				<label for="player">Player:</label>
+				<input type="text" id="player" name="player">
+			</div>
+			<div>
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="char_name">
 			</div>
 			<div>
 				<label for="age">Age:</label>
-				<input type="text" id="age" name="char_age">
+				<input type="number" name="char_age" id="age" min="1" max="100" step="1">
 			</div>
 			<div>
-				<label for="story">Backstory:</label>
-				<textarea id="msg" name="char_story"></textarea>
+				<label for="str">Strength:</label>
+				<input type="number" name="char_str" id="str" min="1" max="100" step="1">
+			</div>
+			<div>
+				<label for="dex">Dexterity:</label>
+				<input type="number" name="char_dex" id="dex" min="1" max="100" step="1">
+			</div>
+			<div>
+				<label for="con">Constitution:</label>
+				<input type="number" name="char_con" id="con" min="1" max="100" step="1">
+			</div>
+			<div>
+				<label for="wis">Wisdom:</label>
+				<input type="number" name="char_wis" id="wis" min="1" max="100" step="1">
+			</div>
+			<div>
+				<label for="int">Intelligence:</label>
+				<input type="number" name="char_int" id="int" min="1" max="100" step="1">
+			</div>
+			<div>
+				<label for="chr">Charisma:</label>
+				<input type="number" name="char_chr" id="chr" min="1" max="100" step="1">
+			</div>
+			<div>
+				<label for="ali">Alignment:</label>
+				<select id="Alignment" name="Alignment">
+				  <option>Lawful Good</option>
+				  <option>Lawful Neutral</option>
+				  <option>Lawful Evil</option>
+				  <option>Neutral Good</option>
+				  <option>True Neutral</option>
+				  <option>Neutral Evil</option>
+				  <option>Chaotic Good</option>
+				  <option>Chaotic Neutral</option>
+				  <option>Chaotic Evil</option>
+				</select>
+			</div>
+			<div>
+				<label for="ac">Armor Class:</label>
+				<input type="number" name="char_ac" id="ac" min="0" step="1">
+			</div>
+			<div>
+				<label for="maxHP">Max HP:</label>
+				<input type="number" name="char_maxHP" id="maxHP" min="0" step="1">
+			</div>
+			<div>
+				<label for="tempHP">Temporary HP:</label>
+				<input type="number" name="char_tempHP" id="tempHP" min="0" step="1">
+			</div>
+			<div>
+				<label for="curHP">Current HP:</label>
+				<input type="number" name="char_curHP" id="curHP" min="0" step="1">
+			</div>
+			<div>
+				<label for="insp">Inspiration:</label>
+				<input type="number" name="char_insp" id="insp" min="0" step="1">
+			</div>
+			<div>
+				<label for="profBonus">Proficiency Bonus:</label>
+				<input type="number" name="char_profBonus" id="profBonus" min="0" step="1">
+			</div>
+			<div>
+				<label for="lCounter">Succesful Death Saves:</label>
+				<input type="number" name="char_lCounter" id="Successful Death Saves" min="0" step="1">
+			</div>
+			<div>
+				<label for="dCounter">Failed Death Saves:</label>
+				<input type="number" name="char_dCounter" id="dCounter" min="0" step="1">
+			</div>
+			<div>
+				<label for="init">Initiative:</label>
+				<input type="number" name="char_init" id="init" min="0" step="1">
+			</div>
+			<div>
+				<label for="speed">Speed:</label>
+				<input type="number" name="char_speed" id="speed" min="0" step="1">
+			</div>
+			<div>
+				<label for="vis">Vision:</label>
+				<input type="number" name="char_vis" id="vis" min="0" step="1">
+			</div>
+			<div>
+				<label for="insp">Inspiration:</label>
+				<input type="number" name="char_insp" id="insp" min="0" step="1">
+			</div>
+			<div>
+				<label for="acr">Acrobatics:</label>
+				<input type="number" name="char_acr" id="acr" min="0" step="1">
+			</div>
+			<div>
+				<label for="aniHan">Animal Handling:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="arcana">Arcana:</label>
+				<input type="number" name="char_arcana" id="arcana" min="0" step="1">
+			</div>
+			<div>
+				<label for="athl">Atheletics:</label>
+				<input type="number" name="char_athl" id="athl" min="0" step="1">
+			</div>
+			<div>
+				<label for="decpt">Deception:</label>
+				<input type="number" name="char_decpt" id="decpt" min="0" step="1">
+			</div>
+			<div>
+				<label for="hist">History:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="insight">Insight:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="intimd">Intimidation:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="invest">Investigation:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="medici">Medicine:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="nature">Nature:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="percept">Perception:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="perform">Performance:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="persuade">Persuasion:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="religion">Religion:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="sleight">Sleight of Hand:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="stealth">Stealth:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="surviv">Survival:</label>
+				<input type="number" name="char_aniHan" id="aniHan" min="0" step="1">
+			</div>
+			<div>
+				<label for="profSkills">Proficient Skills:</label>
+				<input type="text" name="char_aniHan" id="aniHan">
+			</div>
+			<div>
+				<label for="notes">Notes:</label>
+				<input type="text" name="char_aniHan" id="aniHan">
 			</div>
 		</form>
 		<div class="button">
