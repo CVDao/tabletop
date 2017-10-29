@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="newChar.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<form action="/create-new-char" method="post">
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="char_name">
+			</div>
+			<div>
+				<label for="age">Age:</label>
+				<input type="text" id="age" name="char_age">
+			</div>
+			<div>
+				<label for="story">Backstory:</label>
+				<textarea id="msg" name="char_story"></textarea>
+			</div>
+		</form>
+		<div class="button">
+			<button type="submit">Create!!</button>
+		</div>
+	</body>
+</html>
